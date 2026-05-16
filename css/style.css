@@ -377,7 +377,8 @@ a:hover {
     color: var(--color-text);
     line-height: 1.8;
     margin-bottom: var(--space-3xl);
-    max-width: 800px;
+    max-width: 100%;
+    text-align: justify;
 }
 
 .about-grid {
@@ -449,7 +450,8 @@ a:hover {
     color: var(--color-text);
     line-height: 1.8;
     margin-bottom: var(--space-3xl);
-    max-width: 800px;
+    max-width: 100%;
+    text-align: justify;
 }
 
 .tracks-grid {
@@ -567,6 +569,35 @@ a:hover {
     font-size: 0.95rem;
     color: var(--color-text);
     font-weight: 500;
+}
+
+.deadline-bullets {
+    list-style: disc;
+    padding-left: 1.5rem;
+    margin: var(--space-md) 0 0;
+}
+
+.deadline-bullets li {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-text);
+    margin-bottom: var(--space-xs);
+}
+
+.deadline-bullets li .deadline-date-text {
+    font-weight: 600;
+    color: var(--color-primary);
+}
+
+.deadline-bullets li.completed {
+    color: var(--color-text-light);
+    text-decoration: line-through;
+    text-decoration-thickness: 1.5px;
+    opacity: 0.7;
+}
+
+.deadline-bullets li.completed .deadline-date-text {
+    color: var(--color-text-light);
 }
 
 /* Topics */
