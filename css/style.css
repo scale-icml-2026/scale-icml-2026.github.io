@@ -1189,6 +1189,11 @@ a:hover {
     margin-bottom: var(--space-2xl);
 }
 
+.sponsor-item img {
+    max-height: 100px;
+    width: auto;
+}
+
 .sponsor-placeholder {
     width: 200px;
     height: 100px;
