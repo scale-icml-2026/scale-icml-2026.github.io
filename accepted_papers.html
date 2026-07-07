@@ -227,6 +227,17 @@
                         </details>
                     </div>
                 </div>
+                <div class="paper-card">
+                    <div class="paper-id">#75</div>
+                    <div class="paper-body">
+                        <div class="paper-title"><a href="https://openreview.net/forum?id=YvMiBbY0ML" target="_blank" rel="noopener noreferrer">Don’t Blind Your VLA: Aligning Visual Representations for OOD Generalization</a></div>
+                        <details class="paper-abstract">
+                            <summary>Abstract</summary>
+                            <p>The growing success of Vision-Language-Action (VLA) models stems from the promise that pretrained Vision-Language Models (VLMs) can endow agents with transferable world knowledge and vision-language (VL) grounding, laying a foundation for action models with broader generalization. Yet when these VLMs are adapted to the action modality, it remains unclear to what extent their original VL representations and knowledge are preserved. In this work, we conduct a systematic study of representation retention during VLA fine-tuning, showing that naive action fine-tuning leads to degradation of visual representations. To characterize and measure these effects, we probe VLA&#x27;s hidden representations and analyze attention maps, further, we design a set of targeted tasks and methods that contrast VLA models with their counterpart VLMs, isolating changes in VL capabilities induced by action fine-tuning. We further evaluate a range of strategies for aligning visual representations and introduce a simple yet effective method that mitigates degradation and yields improved generalization to out-of-distribution (OOD) scenarios. Taken together, our analysis clarifies the trade-off between action fine-tuning and the degradation of VL representations and highlights practical approaches to recover inherited VL capabilities.</p>
+                        </details>
+                    </div>
+                </div>
+
 
                 <div class="paper-card">
                     <div class="paper-id">#32</div>
@@ -790,17 +801,6 @@ We propose the Tri-Metric Router, a deterministic, training-free dispatch policy
 The router achieves a 0% OOM rate on the evaluated workload; deterministic VRAM safety is enforced only on the Long-band branch via BM25 with a hard 4,096-token truncation, while the Raw and Neural branches retain OOM-safety as an empirical claim on in-distribution inputs at B = 1. On out-of-distribution holdouts, the Tri-Metric router achieves 88.5% oracle alignment with the optimal pipeline — the headline operating metric — while the 99.0% figure on the in-distribution calibration set represents an upper bound of the threshold fit, not an operating result. The router further preserves a statistically stable 49.3% Combined F1 — establishing a rigorous practical operating point without auxiliary model training or GPU memory overhead.
 
 Scope: Evaluated on a single T4, Llama-3-8B-Instruct-AWQ, LLMLingua-2, batch size B = 1, and LongBench English QA; we position this as a reference calibration for the methodology, not a universal result.</p>
-                        </details>
-                    </div>
-                </div>
-
-                <div class="paper-card">
-                    <div class="paper-id">#75</div>
-                    <div class="paper-body">
-                        <div class="paper-title"><a href="https://openreview.net/forum?id=YvMiBbY0ML" target="_blank" rel="noopener noreferrer">Don’t Blind Your VLA: Aligning Visual Representations for OOD Generalization</a></div>
-                        <details class="paper-abstract">
-                            <summary>Abstract</summary>
-                            <p>The growing success of Vision-Language-Action (VLA) models stems from the promise that pretrained Vision-Language Models (VLMs) can endow agents with transferable world knowledge and vision-language (VL) grounding, laying a foundation for action models with broader generalization. Yet when these VLMs are adapted to the action modality, it remains unclear to what extent their original VL representations and knowledge are preserved. In this work, we conduct a systematic study of representation retention during VLA fine-tuning, showing that naive action fine-tuning leads to degradation of visual representations. To characterize and measure these effects, we probe VLA&#x27;s hidden representations and analyze attention maps, further, we design a set of targeted tasks and methods that contrast VLA models with their counterpart VLMs, isolating changes in VL capabilities induced by action fine-tuning. We further evaluate a range of strategies for aligning visual representations and introduce a simple yet effective method that mitigates degradation and yields improved generalization to out-of-distribution (OOD) scenarios. Taken together, our analysis clarifies the trade-off between action fine-tuning and the degradation of VL representations and highlights practical approaches to recover inherited VL capabilities.</p>
                         </details>
                     </div>
                 </div>
